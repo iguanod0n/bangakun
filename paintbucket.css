@@ -1,10 +1,51 @@
-#roundButton {
-  border-radius: 100%;
-  background-color: #00b900;
+
+body {
+  background-image: url(assets/bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-#fixedbutton {
+.bangakunLogo {
+  /*fixed positioning*/
+    position: fixed;
+    z-index: 99;
+    top: 30px;
+    left: 50px;
+}
+
+.roundButton {
+/*fixed positioning*/
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  z-index: 99;
+  bottom: 30px;
+  right: 50px;
+/*text object*/
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+/*button form*/
+  border-radius: 100px;
+  background-color: #00b900;
+  border: none;
+  padding: 15px;
+  margin: 4px 2px;
+}
+
+.hamburgerMenu {
+/*fixed positioning*/
+  position: fixed;
+  z-index: 99;
+  top: 30px;
+  right: 50px;
+/*text object*/
+  color: #161f3c;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 28px;
 }
