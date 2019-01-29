@@ -2,25 +2,61 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="paintbucket.css">
+    <link rel="stylesheet" type="text/css" href="css/paintbucket.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script src="js/slideMenu.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K" crossorigin="anonymous"></script>
     <title>Penyedia Akun Instagram No.1 Di Indonesia</title>
   </head>
   <body>
+
     <a href="#head">
       <div class="roundButton">
         Kontak Lewat Whatsapp
       </div>
     </a>
+
     <a href="#top">
       <img class="bangakunLogo" src="assets/bangakun-logo.png" alt="bangakun-logo.png">
     </a>
-    <a href="#top" class="hamburgerMenu">
-      <i class="fas fa-bars"></i>
+
+    <a href="#top" onclick="openNav()" class="hamburgerMenu">
+      <n style="font-weight: bold; font-size: 24px;">MENU  </n><i style="color: #dc0024; "class="fas fa-bars"></i>
     </a>
-    <div style="height: 1400px;" class="">
+
+    <div class="contactSidebar">
+      <p class="verticalText">FOLLOW US</p><br><br><br><br>
+      <a><i class="fab fa-facebook-f"></i></a><br><br>
+      <a><i class="fab fa-instagram"></i></a><br><br>
+      <a><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div style="width: 1366; height: 768px; padding: auto;">
+      <!-- TODO: pararel scroll kalau bisa ini mainBannernya -->
+      <img class="mainBanner" src="assets/main-banner.png" alt="penyedia-akun-instagram-no-satu">
+    </div>
+
+    <div style="width: 1366; height: 768px; background-color: #dc0024;">
 
     </div>
+
+    <!-- Overlay menu source : https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <!-- The overlay -->
+   <div id="myNav" class="overlay">
+
+     <!-- Button to close the overlay navigation -->
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+     <!-- Overlay content -->
+     <div class="overlay-content">
+       <a href="#">TENTANG</a>
+       <a href="#">JASA</a>
+       <a href="#">KENAPA INSTAGRAM</a>
+       <a href="#">KEUNTUNGAN MENGGUNAKAN INSTAGRAM</a>
+       <a href="#">TESTIMONIAL</a>
+       <a href="#">KONTAK</a>
+     </div>
+`` `</div>
   </body>
 </html>
