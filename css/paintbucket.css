@@ -49,6 +49,22 @@ td {
   height: 400px;
 }
 
+/* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
+
+.faqDiv::-webkit-scrollbar {
+    width: 1em;
+}
+
+.faqDiv::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+}
+
+.faqDiv::-webkit-scrollbar-thumb {
+  background-color: #dc0024;
+}
+
+/* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
+
 .testimonialDiv {
   overflow-y: auto;
   height: 480px;
@@ -62,15 +78,15 @@ td {
 
 /* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
 
-.faqDiv::-webkit-scrollbar {
+.testimonialDiv::-webkit-scrollbar {
     width: 1em;
 }
 
-.faqDiv::-webkit-scrollbar-track {
+.testimonialDiv::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
 }
 
-.faqDiv::-webkit-scrollbar-thumb {
+.testimonialDiv::-webkit-scrollbar-thumb {
   background-color: #dc0024;
 }
 
@@ -245,3 +261,50 @@ table a {
   left: 30%;
   margin: -70px 0 0 -170px;
 }
+
+.footerBanner {
+  width: 500px;
+  position: absolute;
+  top: 26%;
+  left: 45%;
+  margin: -70px 0 0 -170px;
+}
+
+.footer {
+  background-color: #161f3c;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:180px;
+  padding-top: 100px;
+}
+
+.footer table {
+  border-spacing: 20px;
+}
+
+.footer a {
+  font-size: 26px;
+  margin-right: 16px;
+}
+
+/* count up date source : https://guwii.com/bytes/count-date-time-javascript/ */
+
+.countup {
+  position: absolute;
+  top: 300px;
+  text-align: center;
+}
+.countup .timeel {
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+  margin: 0;
+  color: #dc0024;
+  min-width: 2.6rem;
+}
+.countup p[class*="timeRef"] {
+  color: #161f3c;
+}
+
+/* end of count up date source : https://guwii.com/bytes/count-date-time-javascript/ */
