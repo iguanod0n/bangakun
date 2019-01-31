@@ -49,6 +49,17 @@ td {
   height: 400px;
 }
 
+.testimonialDiv {
+  overflow-y: auto;
+  height: 480px;
+  width: 600px;
+}
+
+.testimonialDiv img {
+  width: 180px;
+  margin: 6px;
+}
+
 /* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
 
 .faqDiv::-webkit-scrollbar {
