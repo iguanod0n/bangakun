@@ -13,18 +13,35 @@ body {
 }
 
 table {
-  border-spacing: 46px;
+  border-spacing: 36px;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 td {
   vertical-align: top;
   text-align: left;
+  font-size: 12px;
+}
+
+.whiteTable {
+  color : #161f3c;
+}
+
+.whiteTable h3, h1 {
+  color: #dc0024;
+  font-weight: bold;
+}
+
+table a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .bangakunLogo {
