@@ -1,10 +1,30 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url(../assets/bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0px;
   padding: 0px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+table {
+  border-spacing: 46px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+td {
+  vertical-align: top;
+  text-align: left;
 }
 
 .bangakunLogo {
@@ -59,6 +79,7 @@ body {
   z-index: 99;
   bottom: 30px;
   left: 50px;
+  color: #161f3c;
 }
 
 .contactSidebar a {
@@ -71,6 +92,17 @@ body {
   font-family: 'Noto Sans', sans-serif;
 	transform: rotate(-90deg);
 	transform-origin: left bottom 0;
+}
+
+.scrollArrow {
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 40px;
+  left: 45%;
+  position: fixed;
+  z-index: 99;
+  display: block;
+  width: 5%;
 }
 
 /* Overlay menu from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */

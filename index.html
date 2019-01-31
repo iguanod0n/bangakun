@@ -2,44 +2,84 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/paintbucket.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
     <script src="js/slideMenu.js"></script>
+    <script src="js/fadeOutLogo.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K" crossorigin="anonymous"></script>
     <title>Penyedia Akun Instagram No.1 Di Indonesia</title>
   </head>
   <body>
 
-    <a href="#head">
-      <div class="roundButton">
-        Kontak Lewat Whatsapp
+    <div class="navigation">
+      <a href="https://api.whatsapp.com/send?phone=6281312290930&text=Saya%20tertarik%20membeli%20akun%20Instagram%20dengan%20followers%20asli%20dari%20penyedia%20terpercaya">
+        <div class="roundButton">
+          Kontak Lewat Whatsapp
+        </div>
+      </a>
+
+      <a href="#top">
+        <img class="bangakunLogo" src="assets/bangakun-logo.png" alt="bangakun-logo.png">
+      </a>
+
+      <a href="#top" onclick="openNav()" class="hamburgerMenu">
+        <n style="font-weight: bold; font-size: 24px;">MENU  </n><i style="color: #dc0024; "class="fas fa-bars"></i>
+      </a>
+
+      <div class="contactSidebar">
+        <p class="verticalText">FOLLOW US</p><br><br><br><br>
+        <a><i class="fab fa-facebook-f"></i></a><br><br>
+        <a><i class="fab fa-instagram"></i></a><br><br>
+        <a><i class="fab fa-twitter"></i></a>
       </div>
-    </a>
 
-    <a href="#top">
-      <img class="bangakunLogo" src="assets/bangakun-logo.png" alt="bangakun-logo.png">
-    </a>
+      <a href="#tentang"><img class="scrollArrow" src="assets/scroll-white.png" alt="autoscroll"></a>
 
-    <a href="#top" onclick="openNav()" class="hamburgerMenu">
-      <n style="font-weight: bold; font-size: 24px;">MENU  </n><i style="color: #dc0024; "class="fas fa-bars"></i>
-    </a>
-
-    <div class="contactSidebar">
-      <p class="verticalText">FOLLOW US</p><br><br><br><br>
-      <a><i class="fab fa-facebook-f"></i></a><br><br>
-      <a><i class="fab fa-instagram"></i></a><br><br>
-      <a><i class="fab fa-twitter"></i></a>
     </div>
 
-    <div style="width: 1366; height: 768px; padding: auto;">
+    <div class="welcome-page"style="width: 1366; height: 768px;">
       <!-- TODO: pararel scroll kalau bisa ini mainBannernya -->
       <img class="mainBanner" src="assets/main-banner.png" alt="penyedia-akun-instagram-no-satu">
     </div>
 
-    <div style="width: 1366; height: 768px; background-color: #dc0024;">
+    <section id="tentang">
+      <div style="width: 1366; height: 768px; background-color: #dc0024; position: relative">
+        <table>
+          <tr>
+            <td>
+              <h3>TENTANG</h3>
+              <h1>PRODUSEN DAN PENJUAL <br>AKUN INSTAGRAM</h1>
+            </td>
+            <td>
+              <br>
+              Bangakun merupakan perusahan yang bergerak <br>
+              di bidang produksi dan penjualan akun instagram. <br>
+              Akun instagram yang kita jual memiliki jumlah <br>
+              followers mulai dari 1000 Followers sampai dengan <br>
+              100.000 Followers. Bangakun berdiri semenjak tahun <br>
+              2013 dan telah menjual ribuan akun instagram. <br> <br>
 
-    </div>
+              Pasar penjualan bangakun mayoritas di Indonesia. <br>
+              Selain pasar Indonesia, Bangakun telah menjual akun <br>
+              ke pasar luar negri seperti Malaysia, Singapura, <br>
+              Taiwan, Jepang dan India. <br> <br>
+
+              Akun yang kita produksi dipasarkan dan dijual <br>
+              di beberapa Instagram Market yang dibawahi oleh bangakun : <br> <br>
+
+              Instagram : @bangakun <br>
+              Instagram : @bangiklan <br>
+              Instagram : @waroeng.ig <br>
+              Instagram : @jualig__ <br>
+              Instagram : @instapedia <br>
+              Instagram : @akunmart <br>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
 
     <!-- Overlay menu source : https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
     <!-- The overlay -->
