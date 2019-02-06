@@ -1,6 +1,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Gotham', sans-serif;
 }
 
 body {
@@ -9,7 +10,8 @@ body {
   background-attachment: fixed;
   margin: 0px;
   padding: 0px;
-  font-family: 'Noto Sans', sans-serif;
+  transition: 1000ms;
+  line-height: 1.6;
 }
 
 /* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
@@ -67,13 +69,13 @@ td {
 
 .testimonialDiv {
   overflow-y: auto;
-  height: 480px;
+  height: 460px;
   width: 600px;
 }
 
 .testimonialDiv img {
-  width: 180px;
-  margin: 6px;
+  width: 160px;
+  margin: 10px;
 }
 
 /* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
@@ -188,7 +190,7 @@ table a {
   margin-right: auto;
   bottom: 40px;
   left: 45%;
-  position: fixed;
+  position: absolute;
   z-index: 99;
   display: block;
   width: 5%;
@@ -265,34 +267,56 @@ table a {
 .footerBanner {
   width: 500px;
   position: absolute;
-  top: 26%;
+  top: 40%;
   left: 45%;
   margin: -70px 0 0 -170px;
 }
 
 .footer {
+  color: white;
   background-color: #161f3c;
   position:absolute;
   bottom:0;
   width:100%;
-  height:180px;
-  padding-top: 100px;
+  height:250px;
 }
 
 .footer table {
   border-spacing: 20px;
+  bottom: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.footer h3 {
+  color: #dc0024;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .footer a {
-  font-size: 26px;
+  font-size: 12px;
   margin-right: 16px;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #dc0024;
+}
+
+.footer img {
+  width: 200px;
 }
 
 /* count up date source : https://guwii.com/bytes/count-date-time-javascript/ */
 
 .countup {
   position: absolute;
-  top: 300px;
+  margin-left: 13%;
+  top: 380px;
   text-align: center;
 }
 .countup .timeel {
