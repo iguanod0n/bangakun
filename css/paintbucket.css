@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Gotham', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,114 +34,21 @@ body::-webkit-scrollbar-thumb {
   background-color: #dc0024;
 }
 
-/* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
-
-table {
-  border-spacing: 36px;
-  margin: 0;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-
-td {
-  vertical-align: top;
-  text-align: left;
-  font-size: 13px;
-}
-
-.faqDiv {
-  overflow-y: auto;
-  height: 400px;
-}
-
-/* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
-
-.faqDiv::-webkit-scrollbar {
-    width: 1em;
-}
-
-.faqDiv::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
-}
-
-.faqDiv::-webkit-scrollbar-thumb {
-  background-color: #dc0024;
-}
-
-/* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
-
-.testimonialDiv {
-  overflow-y: auto;
-  height: 460px;
-  width: 600px;
-}
-
-.testimonialDiv img {
-  width: 160px;
-  margin: 10px;
-}
-
-/* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
-
-.changeColor {
-  color: white;
-}
-
-.testimonialDiv::-webkit-scrollbar {
-    width: 1em;
-}
-
-.testimonialDiv::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
-}
-
-.testimonialDiv::-webkit-scrollbar-thumb {
-  background-color: #dc0024;
-}
-
-/* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
-
-.redTable {
-  color : white;
-}
-
-.redTable h3, .redTable h1 {
-  color: white;
-  font-weight: bold;
-}
-
-.whiteTable {
-  color : #161f3c;
-}
-
-.whiteTable h3, .whiteTable h1 {
-  color: #dc0024;
-  font-weight: bold;
-}
-
-table a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .bangakunLogo {
   /* fixed positioning */
     position: fixed;
     z-index: 99;
-    top: 30px;
-    left: 50px;
+    top: 20px;
+    left: 20px;
+    width: 140px;
 }
 
 .roundButton {
 /* fixed positioning */
   position: fixed;
   z-index: 99;
-  bottom: 30px;
-  right: 50px;
+  bottom: 20px;
+  right: 20px;
 /* text object */
   color: white;
   text-align: center;
@@ -148,7 +56,7 @@ table a {
   display: inline-block;
   font-weight: bold;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
 /* button form */
   border-radius: 100px;
   background-color: #00b900;
@@ -157,51 +65,53 @@ table a {
   margin: 4px 2px;
 }
 
+.mainBanner {
+  width: 20%;
+  margin: -70px 0 0 -170px;
+}
+
 .hamburgerMenu {
 /* fixed positioning */
   position: fixed;
   z-index: 99;
-  top: 30px;
-  right: 50px;
+  top: 20px;
+  right: 20px;
 /* text object */
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
   display: inline-block;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 28px;
+  font-size: 14px;
+}
+
+.menuHam {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.verticalText {
+  margin-left: 16px;
+  font-weight: bold;
+  margin-bottom: -60px;
+  font-family: 'Noto Sans', sans-serif;
+  transform: rotate(-90deg);
+  transform-origin: left bottom 0;
 }
 
 .contactSidebar {
 /* fixed positioning */
   position: fixed;
   z-index: 99;
-  bottom: 30px;
-  left: 50px;
+  bottom: 20px;
+  left: 20px;
 }
 
 .contactSidebar a {
-  font-size: 28px;
+  font-size: 16px;
 }
 
-.verticalText {
-  margin-left: 18px;
-  font-weight: bold;
-  font-family: 'Noto Sans', sans-serif;
-	transform: rotate(-90deg);
-	transform-origin: left bottom 0;
-}
-
-.scrollArrow {
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 40px;
-  left: 45%;
-  position: absolute;
-  z-index: 99;
-  display: block;
-  width: 5%;
-}
+/* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
 
 /* Overlay menu from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 /* The Overlay (background) */
@@ -231,9 +141,8 @@ table a {
 .overlay a {
  padding: 8px;
  text-decoration: none;
- font-size: 36px;
+ font-size: 18px;
  font-weight: bold;
- font-family: 'Noto Sans', sans-serif;
  color: white;
  display: block; /* Display block instead of inline */
  transition: 0.3s; /* Transition effects on hover (color) */
@@ -249,88 +158,367 @@ table a {
  position: absolute;
  top: 20px;
  right: 45px;
- font-size: 60px;
+ font-size: 28px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
- .overlay a {font-size: 20px}
+ .overlay a {font-size: 2px}
  .overlay .closebtn {
-   font-size: 40px;
+   font-size: 20px;
    top: 15px;
    right: 35px;
  }
 }
 /* end of overlay menu from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
-.mainBanner {
-  width: 900px;
-  position: fixed;
-  top: 45%;
-  left: 30%;
-  margin: -70px 0 0 -170px;
-}
 
-.footerBanner {
-  width: 500px;
-  position: absolute;
-  top: 30%;
-  left: 45%;
-  margin: -70px 0 0 -170px;
-}
+@media (min-width: 500px) {
+  .changeColorText {
+    background-color: white;
+  }
 
-.footer {
-  color: white;
-  background-color: #161f3c;
-  position:absolute;
-  bottom:-6px;
-  width:100%;
-  height:250px;
-}
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Gotham', sans-serif;
+    overflow-x: hidden;
+  }
 
-.footer table {
-  border-spacing: 20px;
-  text-align: left;
-}
+  body {
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    transition: 1000ms;
+    line-height: 1.6;
+    color: #161f3c;
+  }
 
-.footer h3 {
-  color: #dc0024;
-}
+  /* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
 
-.footer ul {
-  list-style-type: none;
-  padding: 0;
-}
+  body::-webkit-scrollbar {
+      width: 1em;
+  }
 
-.footer a {
-  font-size: 12px;
-  margin-right: 16px;
-  font-weight: bold;
-}
+  body::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+  }
 
-.footer a:hover {
-  color: #dc0024;
-}
+  body::-webkit-scrollbar-thumb {
+    background-color: #dc0024;
+  }
 
-.footer img {
-  width: 200px;
-}
+  /* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
 
-.sweetData h1 {
-  color: #dc0024;
-  font-size: 42px;
-  text-align: center;
-}
+  table {
+    border-spacing: 36px;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
 
-.sweetData h4 {
-  font-size: 24px;
-  text-align: center;
-}
+  td {
+    vertical-align: top;
+    text-align: left;
+    font-size: 13px;
+  }
 
-.dataTable {
-  top: 50%;
-  left: 50%;
-  border-spacing: 100px 60px;
-  vertical-align: top;
-  text-align: center;
+  .faqDiv {
+    overflow-y: auto;
+    height: 400px;
+  }
+
+  /* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
+
+  .faqDiv::-webkit-scrollbar {
+      width: 1em;
+  }
+
+  .faqDiv::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+  }
+
+  .faqDiv::-webkit-scrollbar-thumb {
+    background-color: #dc0024;
+  }
+
+  /* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
+
+  .testimonialDiv {
+    overflow-y: auto;
+    height: 460px;
+    width: 600px;
+  }
+
+  .testimonialDiv img {
+    width: 160px;
+    margin: 10px;
+  }
+
+  /* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
+
+  .changeColor {
+    color: white;
+  }
+
+  .testimonialDiv::-webkit-scrollbar {
+      width: 1em;
+  }
+
+  .testimonialDiv::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+  }
+
+  .testimonialDiv::-webkit-scrollbar-thumb {
+    background-color: #dc0024;
+  }
+
+  /* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
+
+  .redTable {
+    color : white;
+  }
+
+  .redTable h3, .redTable h1 {
+    color: white;
+    font-weight: bold;
+  }
+
+  .whiteTable {
+    color : #161f3c;
+  }
+
+  .whiteTable h3, .whiteTable h1 {
+    color: #dc0024;
+    font-weight: bold;
+  }
+
+  table a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .bangakunLogo {
+    /* fixed positioning */
+      width: 200px;
+      position: fixed;
+      z-index: 99;
+      top: 30px;
+      left: 50px;
+  }
+
+  .menuHam {
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 4px;
+  }
+
+  .roundButton {
+  /* fixed positioning */
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+    right: 50px;
+  /* text object */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+  /* button form */
+    border-radius: 100px;
+    background-color: #00b900;
+    border: none;
+    padding: 15px;
+    margin: 4px 2px;
+  }
+
+  .hamburgerMenu {
+  /* fixed positioning */
+    position: fixed;
+    z-index: 99;
+    top: 30px;
+    right: 50px;
+  /* text object */
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+  }
+
+  .contactSidebar {
+  /* fixed positioning */
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+    left: 50px;
+  }
+
+  .contactSidebar a {
+    font-size: 28px;
+  }
+
+  .verticalText {
+    margin-left: 18px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    transform: rotate(-90deg);
+    transform-origin: left bottom 0;
+  }
+
+  .scrollArrow {
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 40px;
+    left: 45%;
+    position: absolute;
+    z-index: 99;
+    display: block;
+    width: 5%;
+  }
+
+  /* Overlay menu from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+  /* The Overlay (background) */
+  .overlay {
+   /* Height & width depends on how you want to reveal the overlay (see JS below) */
+   height: 100%;
+   width: 0;
+   position: fixed; /* Stay in place */
+   z-index: 100; /* Sit on top */
+   left: 0;
+   top: 0;
+   background-color: #dc0024;
+   overflow-x: hidden; /* Disable horizontal scroll */
+   transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+   position: relative;
+   top: 20%; /* 25% from the top */
+   width: 100%; /* 100% width */
+   text-align: center; /* Centered text/links */
+   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+   padding: 8px;
+   text-decoration: none;
+   font-size: 36px;
+   font-weight: bold;
+   color: white;
+   display: block; /* Display block instead of inline */
+   transition: 0.3s; /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+   color: #f1f1f1;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+   position: absolute;
+   top: 20px;
+   right: 45px;
+   font-size: 60px;
+  }
+
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+   .overlay a {font-size: 20px}
+   .overlay .closebtn {
+     font-size: 40px;
+     top: 15px;
+     right: 35px;
+   }
+  }
+  /* end of overlay menu from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+
+  .mainBanner {
+    width: 900px;
+    position: fixed;
+    top: 45%;
+    left: 30%;
+    margin: -70px 0 0 -170px;
+  }
+
+  .footerBanner {
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    margin: -70px 0 0 -170px;
+  }
+
+  .footer {
+    color: white;
+    background-color: #161f3c;
+    position:absolute;
+    bottom:-6px;
+    width:100%;
+    height:250px;
+  }
+
+  .footer table {
+    border-spacing: 20px;
+    text-align: left;
+  }
+
+  .footer h3 {
+    color: #dc0024;
+  }
+
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer a {
+    font-size: 12px;
+    margin-right: 16px;
+    font-weight: bold;
+  }
+
+  .footer a:hover {
+    color: #dc0024;
+  }
+
+  .footer img {
+    width: 200px;
+  }
+
+  .sweetData h1 {
+    color: #dc0024;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .sweetData h4 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .dataTable {
+    top: 50%;
+    left: 50%;
+    border-spacing: 100px 60px;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .pageContainer {
+    width: 1350px;
+    height: 768px;
+  }
 }

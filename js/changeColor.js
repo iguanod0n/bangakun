@@ -2,7 +2,7 @@ $(document).ready(function(){
     var scroll_pos = 0;
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
-        if(scroll_pos > 200 && scroll_pos < 1900) {
+        if(scroll_pos > 200 && scroll_pos < 1980) {
             $("#contactSideBarID").css('color', 'white');
         }
         else {
@@ -15,7 +15,7 @@ $(document).ready(function(){
     var scroll_pos = 0;
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
-        if(scroll_pos > 200 && scroll_pos < 1900) {
+        if(scroll_pos > 680 && scroll_pos < 2280) {
             $(".navigation n").css('color', 'white');
         }
         else {
@@ -28,7 +28,7 @@ $(document).ready(function(){
     var scroll_pos = 0;
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
-        if(scroll_pos > 200 && scroll_pos < 1900) {
+        if(scroll_pos > 680 && scroll_pos < 2280) {
             $("#fasID").css('color', 'white');
         }
         else {
@@ -42,7 +42,7 @@ var scrollSrc = "assets/bangakun-logo.png";
 
 $(window).scroll(function() {
    var value = $(this).scrollTop();
-   if (value > 200 && value < 1900)
+   if (value > 680 && value < 2280)
       $("#bangakunLogoID").attr("src", initialSrc);
    else
       $("#bangakunLogoID").attr("src", scrollSrc);
