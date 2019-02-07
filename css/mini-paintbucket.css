@@ -1,0 +1,58 @@
+html {
+  font-family: 'Gotham', sans-serif;
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #dc0024;
+  margin-right: 16px;
+}
+
+.mobileContainer {
+  padding: 20px;
+}
+
+.mobileContentContainer {
+  margin-top: 70px;
+}
+
+.mainBanner {
+  width: 100%;
+}
+
+.footerBanner {
+  width: 100%;
+}
+
+.mobileContainer {
+  color: #161f3c;
+}
+
+.redText {
+  color: #dc0024;
+}
+
+.faqList {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.testimonialImg {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.testimonialImg img {
+  width: 29.5%;
+  margin: 5px;
+}
+
+.companyData {
+  border-spacing: 20px;
+  margin-left: -20px;
+  vertical-align: top;
+}
