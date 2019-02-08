@@ -32,7 +32,7 @@ $(document).ready(function(){
             $("#fasID").css('color', 'white');
         }
         else {
-            $("#fasID").css('color', '#dc0024');
+            $("#fasID").css('color', '#c7232a');
         }
     });
 });

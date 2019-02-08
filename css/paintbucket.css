@@ -1,179 +1,3 @@
-
-.changeColorText {
-  background-color: white;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-family: 'Gotham', sans-serif;
-  overflow-x: hidden;
-}
-
-body {
-  background-image: url(../assets/bg.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0px;
-  padding: 0px;
-  transition: 1000ms;
-  line-height: 1.6;
-  color: #161f3c;
-}
-
-/* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
-
-body::-webkit-scrollbar {
-    width: 1em;
-}
-
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #dc0024;
-}
-
-.bangakunLogo {
-  /* fixed positioning */
-    position: fixed;
-    z-index: 99;
-    top: 20px;
-    left: 20px;
-    width: 140px;
-}
-
-.roundButton {
-/* fixed positioning */
-  position: fixed;
-  z-index: 99;
-  bottom: 20px;
-  right: 20px;
-/* text object */
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: bold;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 10px;
-/* button form */
-  border-radius: 100px;
-  background-color: #00b900;
-  border: none;
-  padding: 15px;
-  margin: 4px 2px;
-}
-
-.mainBanner {
-  width: 20%;
-  margin: -70px 0 0 -170px;
-}
-
-.hamburgerMenu {
-/* fixed positioning */
-  position: fixed;
-  z-index: 99;
-  top: 20px;
-  right: 20px;
-/* text object */
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 14px;
-}
-
-.menuHam {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.verticalText {
-  margin-left: 16px;
-  font-weight: bold;
-  margin-bottom: -60px;
-  font-family: 'Noto Sans', sans-serif;
-  transform: rotate(-90deg);
-  transform-origin: left bottom 0;
-}
-
-.contactSidebar {
-/* fixed positioning */
-  position: fixed;
-  z-index: 99;
-  bottom: 20px;
-  left: 20px;
-}
-
-.contactSidebar a {
-  font-size: 16px;
-}
-
-/* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
-
-/* Overlay menu from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
-/* The Overlay (background) */
-.overlay {
- /* Height & width depends on how you want to reveal the overlay (see JS below) */
- height: 100%;
- width: 0;
- position: fixed; /* Stay in place */
- z-index: 100; /* Sit on top */
- left: 0;
- top: 0;
- background-color: #dc0024;
- overflow-x: hidden; /* Disable horizontal scroll */
- transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
- position: relative;
- top: 20%; /* 25% from the top */
- width: 100%; /* 100% width */
- text-align: center; /* Centered text/links */
- margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
- padding: 8px;
- text-decoration: none;
- font-size: 18px;
- font-weight: bold;
- color: white;
- display: block; /* Display block instead of inline */
- transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
- color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
- position: absolute;
- top: 20px;
- right: 45px;
- font-size: 28px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
- .overlay a {font-size: 2px}
- .overlay .closebtn {
-   font-size: 20px;
-   top: 15px;
-   right: 35px;
- }
-}
-/* end of overlay menu from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
-
-
-@media (min-width: 500px) {
   .changeColorText {
     background-color: white;
   }
@@ -195,6 +19,10 @@ body::-webkit-scrollbar-thumb {
     color: #161f3c;
   }
 
+  .footerSocial a {
+    font-size: 80px;
+  }
+
   /* source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
 
   body::-webkit-scrollbar {
@@ -206,7 +34,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #dc0024;
+    background-color: #c7232a;
   }
 
   /* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
@@ -243,7 +71,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .faqDiv::-webkit-scrollbar-thumb {
-    background-color: #dc0024;
+    background-color: #c7232a;
   }
 
   /* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
@@ -274,7 +102,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .testimonialDiv::-webkit-scrollbar-thumb {
-    background-color: #dc0024;
+    background-color: #c7232a;
   }
 
   /* end of source : https://css-tricks.com/almanac/properties/s/scrollbar/ */
@@ -293,7 +121,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .whiteTable h3, .whiteTable h1 {
-    color: #dc0024;
+    color: #c7232a;
     font-weight: bold;
   }
 
@@ -396,7 +224,7 @@ body::-webkit-scrollbar-thumb {
    z-index: 100; /* Sit on top */
    left: 0;
    top: 0;
-   background-color: #dc0024;
+   background-color: #c7232a;
    overflow-x: hidden; /* Disable horizontal scroll */
    transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
@@ -448,9 +276,20 @@ body::-webkit-scrollbar-thumb {
   .mainBanner {
     width: 900px;
     position: fixed;
-    top: 45%;
+    top: 55%;
     left: 30%;
     margin: -70px 0 0 -170px;
+  }
+
+  .bangakunGroup{
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    margin: -70px 0 0 -170px;
+  }
+
+  .bangakunGroup img {
+    width: 15%;
   }
 
   .footerBanner {
@@ -476,7 +315,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .footer h3 {
-    color: #dc0024;
+    color: #c7232a;
   }
 
   .footer ul {
@@ -491,7 +330,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .footer a:hover {
-    color: #dc0024;
+    color: #c7232a;
   }
 
   .footer img {
@@ -499,7 +338,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .sweetData h1 {
-    color: #dc0024;
+    color: #c7232a;
     font-size: 42px;
     text-align: center;
   }
@@ -521,4 +360,3 @@ body::-webkit-scrollbar-thumb {
     width: 1350px;
     height: 768px;
   }
-}

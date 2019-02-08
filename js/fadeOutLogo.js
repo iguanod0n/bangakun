@@ -9,6 +9,10 @@ $(window).scroll(function(){
       $(".scrollArrow").css("opacity", 1 - $(window).scrollTop() / 500);
     });
 
+    $(window).scroll(function(){
+        $(".bangakunGroup").css("opacity", 1 - $(window).scrollTop() / 500);
+      });
+
 /*win.scroll(function(){
   scrollPosition = win.scrollTop();
   scrollRatio = 1 - scrollPosition / 300;
