@@ -1,0 +1,25 @@
+{
+  "name": "bangakun",
+  "description": "Produsen dan Penjual Akun Instagram No. 1 Di Indonesia",
+  "version": "0.0.1.6",
+  "keywords": [
+    "Jual Akun Instagram",
+    "Produsen Akun Instagram",
+    "Penjual Akun Instagram",
+    "Akun Instagram Indonesia",
+    "Instagram"
+  ],
+  "contributors": [
+    {
+      "name": "Fatur Arif Muchamad",
+      "email": "faturarifm@gmail.com",
+      "web": "iguanod0n.github.io"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "Mozilla Public License Version 2.0",
+      "url": "https://www.mozilla.org/en-US/MPL/2.0/"
+    }
+  ]
+}
