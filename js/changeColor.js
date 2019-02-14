@@ -15,6 +15,19 @@ $(document).ready(function(){
     var scroll_pos = 0;
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 200 && scroll_pos < 1980) {
+            $("#contactSideBarID a").css('color', 'white');
+        }
+        else {
+            $("#contactSideBarID a").css('color', '#161f3c');
+        }
+    });
+});
+
+$(document).ready(function(){
+    var scroll_pos = 0;
+    $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop();
         if(scroll_pos > 680 && scroll_pos < 2280) {
             $(".navigation n").css('color', 'white');
         }
